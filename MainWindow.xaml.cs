@@ -16,9 +16,34 @@ namespace sakkGomba
     /// </summary>
     public partial class MainWindow : Window
     {
+        const int BoardSize = 8;
+        const int CellSize = 60;
         public MainWindow()
         {
             InitializeComponent();
+            DrawBoard();
+        }
+
+        public void DrawBoard()
+        {
+            gameCanvas.Children.Clear();
+
+            for (int row = 0; row < BoardSize; row++)
+            {
+                for (int col = 0; col < BoardSize; col++)
+                {
+                    Rectangle square = new Rectangle
+                    {
+                        Width = CellSize,
+                        Height = CellSize,
+                        Fill = (row + col) % 2 == 0 ? Brushes.White : Brushes.DarkGray
+                    };
+                    Canvas.SetLeft(square, col * CellSize);
+                    Canvas.SetTop(square, row * CellSize);
+
+                    gameCanvas.Children.Add(square);
+                }
+            }
         }
     }
 }

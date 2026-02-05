@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-		<Canvas x:Name="ganeCanvas">
+		<Canvas x:Name="gameCanvas">
 
 			<Canvas.Background>
 				<ImageBrush x:Name="bgBrush"
