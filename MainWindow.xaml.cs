@@ -45,5 +45,25 @@ namespace sakkGomba
                 }
             }
         }
-    }
+
+		private void StartButton_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void BackButton_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void RestartButton_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+		private void ExitButton_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+	}
 }
