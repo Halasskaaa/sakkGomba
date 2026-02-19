@@ -17,7 +17,7 @@
 
 		</Canvas>
 
-		<Grid x:Name="menuScreen" Background="#AA000000" Visibility="Collapsed">
+		<Grid x:Name="scr_menu" Background="#AA000000" Visibility="Collapsed">
 			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 				<TextBlock Text="Mushroom Chess" FontSize="48" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
 				<Button x:Name="btn_start" Content="Start" Width="150" Height="50" Margin="0,20,0,0" Click="btn_start_Click"/>
@@ -25,7 +25,7 @@
 			</StackPanel>
 		</Grid>
 
-		<Grid x:Name="pieceChooser" Background="#AA000000" Visibility="Collapsed">
+		<Grid x:Name="scr_piece" Background="#AA000000" Visibility="Collapsed">
 			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="706">
 				<TextBlock Text="Select Difficulty" FontSize="36" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
 				<Button x:Name="cbtn_bishop" Content="Bishop" Width="150" Height="50" Margin="0,20,0,0"/>
@@ -36,7 +36,7 @@
 			</StackPanel>
 		</Grid>
 
-		<Grid x:Name="gameOverScreen" Background="#AA000000" Visibility="Visible">
+		<Grid x:Name="scr_gameOver" Background="#AA000000" Visibility="Visible">
 			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 				<TextBlock Text="Game Over" FontSize="48" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
 				<Button x:Name="btn_restart" Content="Restart" Width="150" Height="50" Margin="0,20,0,0" Click="btn_restart_Click"/>

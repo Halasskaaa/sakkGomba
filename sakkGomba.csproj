@@ -12,6 +12,7 @@
     <None Remove="images\background.png" />
     <None Remove="images\bishop.png" />
     <None Remove="images\knight.png" />
+    <None Remove="images\mushroom.png" />
     <None Remove="images\mushroom.webp" />
     <None Remove="images\queen.png" />
     <None Remove="images\rook.png" />
@@ -29,7 +30,7 @@
     <Resource Include="images\knight.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="images\mushroom.webp">
+    <Resource Include="images\mushroom.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\queen.png">

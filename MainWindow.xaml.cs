@@ -48,7 +48,8 @@ namespace sakkGomba
 
 		private void btn_start_Click(object sender, RoutedEventArgs e)
 		{
-
+            scr_menu.Visibility = Visibility.Collapsed;
+            scr_piece.Visibility = Visibility.Visible;
 		}
 
 		private void btn_exit_Click(object sender, RoutedEventArgs e)
@@ -58,7 +59,8 @@ namespace sakkGomba
 
 		private void btn_back_Click(object sender, RoutedEventArgs e)
 		{
-
+            scr_menu.Visibility = Visibility.Visible;
+            scr_piece.Visibility = Visibility.Collapsed;
 		}
 
 		private void btn_restart_Click(object sender, RoutedEventArgs e)
