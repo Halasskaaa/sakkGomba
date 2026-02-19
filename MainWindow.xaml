@@ -28,10 +28,10 @@
 		<Grid x:Name="scr_piece" Background="#AA000000" Visibility="Collapsed">
 			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="706">
 				<TextBlock Text="Select Difficulty" FontSize="36" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+				<Button x:Name="cbtn_rook" Content="Rook" Width="150" Height="50" Margin="0,10,0,0"/>
 				<Button x:Name="cbtn_bishop" Content="Bishop" Width="150" Height="50" Margin="0,20,0,0"/>
 				<Button x:Name="cbtn_knight" Content="Knight" Width="150" Height="50" Margin="0,10,0,0"/>
 				<Button x:Name="cbtn_queen" Content="Queen" Width="150" Height="50" Margin="0,10,0,0"/>
-				<Button x:Name="cbtn_rook" Content="Rook" Width="150" Height="50" Margin="0,10,0,0"/>
 				<Button x:Name="btn_back" Content="Back" Width="150" Height="50" Margin="0,10,0,0" Click="btn_back_Click"/>
 			</StackPanel>
 		</Grid>
