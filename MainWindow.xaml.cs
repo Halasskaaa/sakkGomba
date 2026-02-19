@@ -46,21 +46,22 @@ namespace sakkGomba
             }
         }
 
-		private void StartButton_Click(object sender, RoutedEventArgs e)
+		private void btn_start_Click(object sender, RoutedEventArgs e)
 		{
 
 		}
 
-		private void BackButton_Click(object sender, RoutedEventArgs e)
+		private void btn_exit_Click(object sender, RoutedEventArgs e)
+		{
+			Application.Current.Shutdown();
+		}
+
+		private void btn_back_Click(object sender, RoutedEventArgs e)
 		{
 
 		}
 
-		private void RestartButton_Click(object sender, RoutedEventArgs e)
-		{
-
-		}
-		private void ExitButton_Click(object sender, RoutedEventArgs e)
+		private void btn_restart_Click(object sender, RoutedEventArgs e)
 		{
 
 		}
