@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sakkGomba.images
+namespace sakkGomba
 {
-	internal class SakkBabuk
+	internal class ChessPieces
 	{
 	}
 }
