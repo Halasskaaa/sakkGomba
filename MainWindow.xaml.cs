@@ -79,6 +79,8 @@ namespace sakkGomba
 
             DrawBoard();
             PlaceRook();
+
+            gameControlsOverlay.Visibility = Visibility.Visible;
         }
 
         //in_gameButtons
