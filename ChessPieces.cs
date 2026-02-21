@@ -8,5 +8,6 @@ namespace sakkGomba
 {
 	internal class ChessPieces
 	{
+
 	}
 }
