@@ -50,6 +50,7 @@ namespace sakkGomba
             }
         }
 
+        //buttons
 		private void btn_start_Click(object sender, RoutedEventArgs e)
 		{
             scr_menu.Visibility = Visibility.Collapsed;
@@ -80,6 +81,27 @@ namespace sakkGomba
             PlaceRook();
         }
 
+        //in_gameButtons
+        private void btn_backGame_Click(object sender, RoutedEventArgs e)
+        {
+            gameControlsOverlay.Visibility = Visibility.Collapsed;
+
+            scr_piece.Visibility = Visibility.Visible;
+
+            DrawBoard();
+
+            if (currentPieceImage != null)
+            {
+                gameCanvas.Children.Remove(currentPieceImage);
+                currentPieceImage = null;
+            }
+        }
+        private void btn_exitGame_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+
         private void PlaceRook()
         {
             if (currentPieceImage != null)
@@ -97,10 +119,16 @@ namespace sakkGomba
             int randomRow = rnd.Next(0, BoardSize);
             int randomColumn = rnd.Next(0, BoardSize);
 
-            Canvas.SetLeft(currentPieceImage, 3 * CellSize);
-            Canvas.SetTop(currentPieceImage, 3 * CellSize);
+            Canvas.SetLeft(currentPieceImage, randomRow * CellSize);
+            Canvas.SetTop(currentPieceImage, randomColumn * CellSize);
 
             gameCanvas.Children.Add(currentPieceImage);
         }
+
+
+
+
+
+
     }
 }
