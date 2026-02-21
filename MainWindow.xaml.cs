@@ -18,6 +18,10 @@ namespace sakkGomba
     {
         const int BoardSize = 8;
         const int CellSize = 60;
+
+        Image currentPieceImage;
+        Random rnd = new Random();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -68,5 +72,35 @@ namespace sakkGomba
 
 		}
 
-	}
+        private void cbtn_rook_Click(object sender, RoutedEventArgs e)
+        {
+            scr_piece.Visibility = Visibility.Collapsed;
+
+            DrawBoard();
+            PlaceRook();
+        }
+
+        private void PlaceRook()
+        {
+            if (currentPieceImage != null)
+            {
+                gameCanvas.Children.Remove(currentPieceImage);
+            }
+
+            currentPieceImage = new Image
+            {
+                Source = new BitmapImage(new Uri("pack://application:,,,/images/rook.png")),
+                Width = CellSize,
+                Height = CellSize
+            };
+
+            int randomRow = rnd.Next(0, BoardSize);
+            int randomColumn = rnd.Next(0, BoardSize);
+
+            Canvas.SetLeft(currentPieceImage, 3 * CellSize);
+            Canvas.SetTop(currentPieceImage, 3 * CellSize);
+
+            gameCanvas.Children.Add(currentPieceImage);
+        }
+    }
 }
